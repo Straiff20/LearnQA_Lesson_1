@@ -8,4 +8,10 @@ public class MainClassTest extends MainClass {
         int localNumber = getLocalNumber();
         assertEquals("Error: getLocalNumber return not \"14\"", 14, localNumber);
     }
+
+    @Test
+    public void testGetClassNumber() {
+        int classNumber = getClassNumber();
+        assertEquals("Error: classNumber not more \"45\". ClassNumber = " + classNumber, classNumber > 45, classNumber);
+    }
 }

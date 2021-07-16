@@ -14,4 +14,9 @@ public class MainClassTest extends MainClass {
         int classNumber = getClassNumber();
         assertEquals("Error: classNumber not more \"45\". ClassNumber = " + classNumber, classNumber > 45, classNumber);
     }
+
+    @Test
+    public void testGetClassString() {
+        assertEquals("Error: class_string don't have \"Hello\" word", true, getClassString());
+    }
 }

@@ -6,6 +6,6 @@ public class MainClassTest extends MainClass {
     @Test
     public void testGetLocalNumber() {
         int localNumber = getLocalNumber();
-        assertEquals("getLocalNumber return \"14\"", 14, localNumber);
+        assertEquals("Error: getLocalNumber return not \"14\"", 14, localNumber);
     }
 }
